@@ -1,0 +1,27 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+spaces_around_operators = true      # 运算符两边都有空格
+indent_brace_style = 1tbs           # 条件语句格式是 1tbs
+
+[*.js,*.ts]                         # 对所有的 js 文件生效
+quote_type = single                 # 字符串使用单引号
+
+[*.{html,less,css,json}]            # 对所有 html, less, css, json 文件生效
+quote_type = double                 # 字符串使用双引号
+
+[package.json]                      # 对 package.json 生效
+indent_size = 2                     # 使用2个空格缩进
+
+[*.md] # 表示仅 md 文件适用以下规则
+max_line_length = off
+trim_trailing_whitespace = false
