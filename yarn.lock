@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@antfu/utils@^0.7.2":
+  "integrity" "sha512-vy9fM3pIxZmX07dL+VX1aZe7ynZ+YyB0jY+jE6r3hOK6GNY2t6W8rzpFC4tgpbXUYABkFQwgJq2XYXlxbXAI0g=="
+  "resolved" "https://registry.npmmirror.com/@antfu/utils/-/utils-0.7.2.tgz"
+  "version" "0.7.2"
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@7.12.11":
   "integrity" "sha512-Zt1yodBx1UcyiePMSkWnU4hPqhwq7hGi2nFL1LeA3EUl+q2LQx16MISgJ0+z7dnmgvP9QtIleuETGOiOH1RcIw=="
   "resolved" "https://registry.npmmirror.com/@babel/code-frame/-/code-frame-7.12.11.tgz"
@@ -274,6 +279,11 @@
   "integrity" "sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA=="
   "resolved" "https://registry.npmmirror.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz"
   "version" "1.2.1"
+
+"@jridgewell/sourcemap-codec@^1.4.13":
+  "integrity" "sha512-XPSJHWmi394fuUuzDnGz1wiKqWfo1yXecHQMRf2l6hztTO+nPru658AyDngaBe7isIxEkRsPR3FZh+s7iVa4Uw=="
+  "resolved" "https://registry.npmmirror.com/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.4.14.tgz"
+  "version" "1.4.14"
 
 "@nodelib/fs.scandir@2.1.5":
   "integrity" "sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g=="
@@ -632,6 +642,28 @@
   dependencies:
     "vue-demi" "*"
 
+"@windicss/config@1.8.10":
+  "integrity" "sha512-O9SsC110b1Ik3YYa4Ck/0TWuCo7YFfA9KDrwD5sAeqscT5COIGK1HszdCT3oh0MJFej2wNrvpfyW9h6yQaW6PA=="
+  "resolved" "https://registry.npmmirror.com/@windicss/config/-/config-1.8.10.tgz"
+  "version" "1.8.10"
+  dependencies:
+    "debug" "^4.3.4"
+    "jiti" "^1.16.0"
+    "windicss" "^3.5.6"
+
+"@windicss/plugin-utils@1.8.10":
+  "integrity" "sha512-Phqk5OW1w+Mv+ry6t7BzAeDq3aMhbI94gR49j9vQCufFfDGCHndhhjtMK0sBv+NPJUsIAIh6qayb1iwBCXUGrw=="
+  "resolved" "https://registry.npmmirror.com/@windicss/plugin-utils/-/plugin-utils-1.8.10.tgz"
+  "version" "1.8.10"
+  dependencies:
+    "@antfu/utils" "^0.7.2"
+    "@windicss/config" "1.8.10"
+    "debug" "^4.3.4"
+    "fast-glob" "^3.2.12"
+    "magic-string" "^0.27.0"
+    "micromatch" "^4.0.5"
+    "windicss" "^3.5.6"
+
 "acorn-jsx@^5.3.1":
   "integrity" "sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ=="
   "resolved" "https://registry.npmmirror.com/acorn-jsx/-/acorn-jsx-5.3.2.tgz"
@@ -828,7 +860,7 @@
     "balanced-match" "^1.0.0"
     "concat-map" "0.0.1"
 
-"braces@^3.0.1":
+"braces@^3.0.2":
   "integrity" "sha512-b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+lBQpZMP1k8l+78Ha0A=="
   "resolved" "https://registry.npmmirror.com/braces/-/braces-3.0.2.tgz"
   "version" "3.0.2"
@@ -1179,10 +1211,10 @@
   dependencies:
     "ms" "^2.1.1"
 
-"debug@^4.0.1", "debug@^4.1.1", "debug@^4.3.2", "debug@^4.3.3":
-  "integrity" "sha512-/zxw5+vh1Tfv+4Qn7a5nsbcJKPaSvCDhojn6FEl9vupwK2VCSDtEiEtqr8DFtzYFOdz63LBkxec7DYuc2jon6Q=="
-  "resolved" "https://registry.npmmirror.com/debug/-/debug-4.3.3.tgz"
-  "version" "4.3.3"
+"debug@^4.0.1", "debug@^4.1.1", "debug@^4.3.2", "debug@^4.3.3", "debug@^4.3.4":
+  "integrity" "sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ=="
+  "resolved" "https://registry.npmmirror.com/debug/-/debug-4.3.4.tgz"
+  "version" "4.3.4"
   dependencies:
     "ms" "2.1.2"
 
@@ -1721,10 +1753,10 @@
   "resolved" "https://registry.npmmirror.com/fast-diff/-/fast-diff-1.2.0.tgz"
   "version" "1.2.0"
 
-"fast-glob@^3.2.9":
-  "integrity" "sha512-xrO3+1bxSo3ZVHAnqzyuewYT6aMFHRAd4Kcs92MAonjwQZLsK9d0SF1IyQ3k5PoirxTW0Oe/RqFgMQ6TcNE5Ew=="
-  "resolved" "https://registry.npmmirror.com/fast-glob/-/fast-glob-3.2.11.tgz"
-  "version" "3.2.11"
+"fast-glob@^3.2.12", "fast-glob@^3.2.9":
+  "integrity" "sha512-DVj4CQIYYow0BlaelwK1pHl5n5cRSJfM60UA0zK891sVInoPri2Ekj7+e1CT3/3qxXenpI+nBBmQAcJPJgaj4w=="
+  "resolved" "https://registry.npmmirror.com/fast-glob/-/fast-glob-3.2.12.tgz"
+  "version" "3.2.12"
   dependencies:
     "@nodelib/fs.stat" "^2.0.2"
     "@nodelib/fs.walk" "^1.2.3"
@@ -2316,6 +2348,11 @@
   "resolved" "https://registry.npmmirror.com/isexe/-/isexe-2.0.0.tgz"
   "version" "2.0.0"
 
+"jiti@^1.16.0":
+  "integrity" "sha512-L3BJStEf5NAqNuzrpfbN71dp43mYIcBUlCRea/vdyv5dW/AYa1d4bpelko4SHdY3I6eN9Wzyasxirj1/vv5kmg=="
+  "resolved" "https://registry.npmmirror.com/jiti/-/jiti-1.16.0.tgz"
+  "version" "1.16.0"
+
 "js-stringify@^1.0.2":
   "integrity" "sha512-rtS5ATOo2Q5k1G+DADISilDA6lv79zIiwFd6CcjuIxGKLFm5C+RLImRscVap9k55i+MOZwgliw+NejvkLuGD5g=="
   "resolved" "https://registry.npmmirror.com/js-stringify/-/js-stringify-1.0.2.tgz"
@@ -2412,6 +2449,11 @@
   "integrity" "sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw=="
   "resolved" "https://registry.npmmirror.com/kind-of/-/kind-of-6.0.3.tgz"
   "version" "6.0.3"
+
+"kolorist@^1.6.0":
+  "integrity" "sha512-dLkz37Ab97HWMx9KTes3Tbi3D1ln9fCAy2zr2YVExJasDRPGRaKcoE4fycWNtnCAJfjFqe0cnY+f8KT2JePEXQ=="
+  "resolved" "https://registry.npmmirror.com/kolorist/-/kolorist-1.6.0.tgz"
+  "version" "1.6.0"
 
 "levn@^0.4.1":
   "integrity" "sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ=="
@@ -2545,6 +2587,13 @@
   dependencies:
     "sourcemap-codec" "^1.4.8"
 
+"magic-string@^0.27.0":
+  "integrity" "sha512-8UnnX2PeRAPZuN12svgR9j7M1uWMovg/CEnIwIG0LFkXSJJe4PdfUGiTGl8V9bsBHFUtfVINcSyYxd7q+kx9fA=="
+  "resolved" "https://registry.npmmirror.com/magic-string/-/magic-string-0.27.0.tgz"
+  "version" "0.27.0"
+  dependencies:
+    "@jridgewell/sourcemap-codec" "^1.4.13"
+
 "make-error@^1.1.1":
   "integrity" "sha512-s8UhlNe7vPKomQhC1qFelMokr/Sc3AgNbso3n74mVPA5LTZwkB9NlXf4XPamLxJE8h0gh73rM94xvwRT2CVInw=="
   "resolved" "https://registry.npmmirror.com/make-error/-/make-error-1.3.6.tgz"
@@ -2597,13 +2646,13 @@
   "resolved" "https://registry.npmmirror.com/merge2/-/merge2-1.4.1.tgz"
   "version" "1.4.1"
 
-"micromatch@^4.0.2", "micromatch@^4.0.4":
-  "integrity" "sha512-pRmzw/XUcwXGpD9aI9q/0XOwLNygjETJ8y0ao0wdqprrzDa4YnxLcz7fQRZr8voh8V10kGhABbNcHVk5wHgWwg=="
-  "resolved" "https://registry.npmmirror.com/micromatch/-/micromatch-4.0.4.tgz"
-  "version" "4.0.4"
+"micromatch@^4.0.2", "micromatch@^4.0.4", "micromatch@^4.0.5":
+  "integrity" "sha512-DMy+ERcEW2q8Z2Po+WNXuw3c5YaUSFjAO5GsJqfEl7UjvtIuFKO6ZrKvcItdy98dwFI2N1tg3zNIdKaQT+aNdA=="
+  "resolved" "https://registry.npmmirror.com/micromatch/-/micromatch-4.0.5.tgz"
+  "version" "4.0.5"
   dependencies:
-    "braces" "^3.0.1"
-    "picomatch" "^2.2.3"
+    "braces" "^3.0.2"
+    "picomatch" "^2.3.1"
 
 "mimic-fn@^1.0.0":
   "integrity" "sha512-jf84uxzwiuiIVKiOLpfYk7N46TSy8ubTonmneY9vrpHNAnp0QBt2BxWV9dO3/j+BoVAb+a5G6YDPW3M5HOdMWQ=="
@@ -2919,7 +2968,7 @@
   "resolved" "https://registry.npmmirror.com/picocolors/-/picocolors-1.0.0.tgz"
   "version" "1.0.0"
 
-"picomatch@^2.2.3":
+"picomatch@^2.3.1":
   "integrity" "sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA=="
   "resolved" "https://registry.npmmirror.com/picomatch/-/picomatch-2.3.1.tgz"
   "version" "2.3.1"
@@ -3766,7 +3815,17 @@
     "spdx-correct" "^3.0.0"
     "spdx-expression-parse" "^3.0.0"
 
-"vite@^4.0.0", "vite@^4.0.3":
+"vite-plugin-windicss@^1.8.10":
+  "integrity" "sha512-scywsuzo46lcTBohspmF0WiwhWEte6p+OUVrX4yr7VMRvLHMHVfLtJReyD5pppjijG7YOwVsZn7XBWWZtF658Q=="
+  "resolved" "https://registry.npmmirror.com/vite-plugin-windicss/-/vite-plugin-windicss-1.8.10.tgz"
+  "version" "1.8.10"
+  dependencies:
+    "@windicss/plugin-utils" "1.8.10"
+    "debug" "^4.3.4"
+    "kolorist" "^1.6.0"
+    "windicss" "^3.5.6"
+
+"vite@^2.0.1 || ^3.0.0 || ^4.0.0", "vite@^4.0.0", "vite@^4.0.3":
   "integrity" "sha512-HvuNv1RdE7deIfQb8mPk51UKjqptO/4RXZ5yXSAvurd5xOckwS/gg8h9Tky3uSbnjYTgUm0hVCet1cyhKd73ZA=="
   "resolved" "https://registry.npmmirror.com/vite/-/vite-4.0.3.tgz"
   "version" "4.0.3"
@@ -3973,6 +4032,11 @@
   "version" "2.0.2"
   dependencies:
     "isexe" "^2.0.0"
+
+"windicss@^3.5.6":
+  "integrity" "sha512-P1mzPEjgFMZLX0ZqfFht4fhV/FX8DTG7ERG1fBLiWvd34pTLVReS5CVsewKn9PApSgXnVfPWwvq+qUsRwpnwFA=="
+  "resolved" "https://registry.npmmirror.com/windicss/-/windicss-3.5.6.tgz"
+  "version" "3.5.6"
 
 "with@^7.0.0":
   "integrity" "sha512-RNGKj82nUPg3g5ygxkQl0R937xLyho1J24ItRCBTr/m1YnZkzJy1hUiHUJrc/VlsDQzsCnInEGSg3bci0Lmd4w=="

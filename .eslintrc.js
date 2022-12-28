@@ -11,5 +11,10 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: ['vue', '@typescript-eslint'],
-  rules: {}
+  rules: {
+    'vue/no-multiple-template-root': 'off' // 关闭多根节点检测
+  },
+  settings: {
+    'import/core-modules': ['virtual:windi.css'] // 解决main引入windi报错的问题
+  }
 }
