@@ -2,9 +2,9 @@
 
 import axios from 'axios'
 import type { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios'
-
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
+import { ElMessage, Message } from 'element-plus'
 
 // NProgress 配置
 NProgress.configure({
@@ -26,7 +26,7 @@ class Request {
         return res
       },
       (err: any) => {
-        console.log(err)
+        return Promise.reject(err)
       }
     )
 
@@ -41,7 +41,15 @@ class Request {
       (err: any) => {
         // 关闭 progress bar
         NProgress.done()
-        console.log(err)
+
+        if (err.response?.data) {
+          const { code, msg } = err.response.data
+          ElMessage.error(`code: ${code} , message: ${msg}`)
+        } else {
+          ElMessage.error(`${err}`)
+        }
+
+        return Promise.reject(err)
       }
     )
   }

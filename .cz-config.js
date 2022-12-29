@@ -25,7 +25,7 @@ module.exports = {
     confirmCommit: '确认以上信息提交?(y/n)'
   },
   //跳过问题
-  skipQuestion: [],
+  skipQuestion: ['body', 'footer'],
   //subject文字长度默认是
   subjectLimit: 72
 }
