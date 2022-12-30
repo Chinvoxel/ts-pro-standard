@@ -4,7 +4,8 @@ import axios from 'axios'
 import type { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios'
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
-import { ElMessage, Message } from 'element-plus'
+import { ElMessage } from 'element-plus'
+import { getToken } from '@/utils/token'
 
 // NProgress 配置
 NProgress.configure({
@@ -23,6 +24,14 @@ class Request {
         // 开启 progress bar
         NProgress.start()
         console.log('全局请求拦截器')
+
+        if (getToken()) {
+          res.headers = {
+            ...res.headers,
+            Authorization: `Bearer${getToken()}`
+          }
+        }
+
         return res
       },
       (err: any) => {

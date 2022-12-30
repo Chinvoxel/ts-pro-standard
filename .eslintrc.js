@@ -15,6 +15,8 @@ module.exports = {
     'vue/no-multiple-template-root': 'off', // 关闭多根节点检测
     'no-console': 'off', // 关闭禁止存在打印
     'import/prefer-default-export': 'off', // 关闭推荐export default
+    'vue/comment-directive': 'off',
+    'vue/multi-word-component-names': 'off', // 关闭单文件组件名必须多个单词的限制
     // 解决后缀忽略不识别问题
     'import/extensions': [
       'error',
