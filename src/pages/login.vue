@@ -11,13 +11,16 @@
   @include flex(center);
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(120deg, #2a3c46 0%, #386a6f 100%);
   overflow-y: auto;
+  background: #03a9f4;
   .login-box {
     width: 1000px;
     height: 600px;
     border-radius: 10px;
-    background: linear-gradient(145deg, #b0b7ba, #d2d9dd);
+    background: #ffffff;
+    background-image: url('@/assets/images/login.png');
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
 </style>

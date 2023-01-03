@@ -17,6 +17,10 @@ module.exports = {
     'import/prefer-default-export': 'off', // 关闭推荐export default
     'vue/comment-directive': 'off',
     'vue/multi-word-component-names': 'off', // 关闭单文件组件名必须多个单词的限制
+    "import/no-extraneous-dependencies": [ // 关闭错误提示开发依赖需安装为生产依赖
+      "error",
+      {"devDependencies": true}
+    ]
     // 解决后缀忽略不识别问题
     'import/extensions': [
       'error',
