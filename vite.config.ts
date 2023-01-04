@@ -31,7 +31,7 @@ export default ({ mode }) =>
       // 别名
       alias: {
         '@': path.resolve(__dirname, 'src'),
-        '/img': './src/assets/image/'
+        '/img': './src/assets/images/'
       },
       extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.vue'] // 文件后缀拓展
     },
@@ -58,10 +58,11 @@ export default ({ mode }) =>
               const arr = filePath.toString().split('node_modules/')[1].split('/')
               const pack: Array<string> = ['vue', 'vue-router']
               if (pack.includes(arr[0])) {
-                return '_' + arr[0]
+                return `_${arr[0]}`
               }
               return '__vendor'
             }
+            return '__vendor'
           }
         }
       }

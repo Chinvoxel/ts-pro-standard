@@ -1,11 +1,13 @@
 // https://www.51cto.com/article/707156.html
 
 import axios from 'axios'
+import './axios.d'
 import type { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios'
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
 import { ElMessage } from 'element-plus'
 import { getToken } from '@/utils/token'
+import { Base64 } from 'js-base64'
 
 // NProgress 配置
 NProgress.configure({
@@ -21,14 +23,14 @@ class Request {
     // 请求拦截
     this.instance.interceptors.request.use(
       (res: AxiosRequestConfig) => {
-        // 开启 progress bar
-        NProgress.start()
-        console.log('全局请求拦截器')
+        NProgress.start() // 开启 progress bar
 
+        console.log('全局请求拦截器')
+        // token判断
         if (getToken()) {
           res.headers = {
             ...res.headers,
-            Authorization: `Bearer${getToken()}`
+            Authorization: Base64.encode(`Bearer${getToken()}`)
           }
         }
 
@@ -42,14 +44,13 @@ class Request {
     // 响应拦截
     this.instance.interceptors.response.use(
       (res: AxiosResponse) => {
-        // 关闭 progress bar
-        NProgress.done()
+        NProgress.done() // 关闭 progress bar
+
         console.log('全局响应拦截器')
-        return res
+        return res.data
       },
       (err: any) => {
-        // 关闭 progress bar
-        NProgress.done()
+        NProgress.done() // 关闭 progress bar
 
         if (err.response?.data) {
           const { code, msg } = err.response.data

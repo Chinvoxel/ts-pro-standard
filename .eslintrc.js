@@ -17,10 +17,8 @@ module.exports = {
     'import/prefer-default-export': 'off', // 关闭推荐export default
     'vue/comment-directive': 'off',
     'vue/multi-word-component-names': 'off', // 关闭单文件组件名必须多个单词的限制
-    "import/no-extraneous-dependencies": [ // 关闭错误提示开发依赖需安装为生产依赖
-      "error",
-      {"devDependencies": true}
-    ]
+    // 关闭错误提示开发依赖需安装为生产依赖
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     // 解决后缀忽略不识别问题
     'import/extensions': [
       'error',
@@ -30,7 +28,9 @@ module.exports = {
         ts: 'never',
         tsx: 'never'
       }
-    ]
+    ],
+    // 关闭变量、函数定义前使用报错提示
+    'no-use-before-define': ['error', { variables: false, functions: false }]
   },
   settings: {
     'import/core-modules': ['virtual:windi.css'], // 解决main引入windi报错的问题

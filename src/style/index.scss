@@ -1,5 +1,6 @@
 @use './reset.scss' as *;
 @use './media.scss' as *;
+@use './mixin.scss' as *;
 
 [v-cloak] {
   display: none;
