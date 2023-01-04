@@ -137,7 +137,7 @@ const submitForm = (formEl: FormInstance | undefined) => {
         background: #f5f5f5;
 
         :deep(.el-input__wrapper) {
-          padding: 1px 8px 1px 1px;
+          padding: 0 8px 0 0;
           height: 36px;
           border-radius: inherit;
           background: inherit;
@@ -150,7 +150,7 @@ const submitForm = (formEl: FormInstance | undefined) => {
               background: #ffffff;
             }
             & > :first-child {
-              margin-left: 4px;
+              margin-left: 8px;
             }
           }
           .el-input__inner {

@@ -5,6 +5,7 @@ module.exports = {
     node: true
   },
   extends: ['plugin:vue/essential', 'airbnb-base', 'plugin:prettier/recommended'],
+  parser: 'vue-eslint-parser',
   parserOptions: {
     ecmaVersion: 'latest',
     parser: '@typescript-eslint/parser',
