@@ -33,7 +33,9 @@ module.exports = {
     // 关闭变量、函数定义前使用报错提示
     'no-use-before-define': ['error', { variables: false, functions: false }],
     // 关闭禁用for-in for-of的规则
-    'no-restricted-syntax': 0
+    'no-restricted-syntax': 0,
+    // 关闭禁止直接修改函数的入参
+    'no-param-reassign': ['error', { props: false }]
   },
   settings: {
     'import/core-modules': ['virtual:windi.css'], // 解决main引入windi报错的问题

@@ -10,10 +10,10 @@ const router = createRouter({
 
 router.beforeEach(to => {
   const isAuthenticated = !!getToken()
-  if (!isAuthenticated && to.name !== 'login') {
-    return { name: 'login' }
+  if (to.name === 'login') {
+    return isAuthenticated ? { path: '/' } : true
   }
-  return true
+  return isAuthenticated ? true : { path: '/login' }
 })
 
 // 路由错误捕获
