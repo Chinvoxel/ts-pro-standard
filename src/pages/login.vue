@@ -65,12 +65,12 @@
 <script setup lang="ts">
 import { ref, reactive } from 'vue'
 import { ElMessage, FormInstance, FormRules } from 'element-plus'
-import md5 from 'js-md5'
 import { useRouter } from 'vue-router'
 import { isEmail } from '@/utils/verify'
-import { loginByEmail } from '@/api/login'
+import { useLoginStore } from '@/store/login'
 
 const router = useRouter()
+const Login = useLoginStore()
 
 const ruleFormRef = ref<FormInstance>()
 const form = reactive({
@@ -99,30 +99,16 @@ const submitForm = (formEl: FormInstance | undefined) => {
   if (!formEl) return
   formEl.validate(valid => {
     if (valid) {
-      login()
+      Login.LoginByEmail(form).then(() => {
+        ElMessage.success('登陆成功！')
+        router.push({ path: '/' })
+      })
       return true
     }
 
     console.log('error submit!')
     return false
   })
-}
-
-const login = async (): Promise<void> => {
-  try {
-    const res = await loginByEmail({
-      email: form.email,
-      password: md5(form.password)
-    })
-    const { code, msg, data } = res
-    if (code !== 200) throw msg
-    console.log('data: ', data.token)
-    router.push({
-      path: '/home'
-    })
-  } catch (err) {
-    ElMessage.error(`${err}`)
-  }
 }
 </script>
 

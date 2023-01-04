@@ -3528,6 +3528,14 @@
   "resolved" "https://registry.npmmirror.com/picomatch/-/picomatch-2.3.1.tgz"
   "version" "2.3.1"
 
+"pinia@^2.0.28":
+  "integrity" "sha512-YClq9DkqCblq9rlyUual7ezMu/iICWdBtfJrDt4oWU9Zxpijyz7xB2xTwx57DaBQ96UGvvTMORzALr+iO5PVMw=="
+  "resolved" "https://registry.npmmirror.com/pinia/-/pinia-2.0.28.tgz"
+  "version" "2.0.28"
+  dependencies:
+    "@vue/devtools-api" "^6.4.5"
+    "vue-demi" "*"
+
 "postcss@^8.1.10", "postcss@^8.4.20":
   "integrity" "sha512-6Q04AXR1212bXr5fh03u8aAwbLxAQNGQ/Q1LNa0VfOI06ZAlhPHtQvE4OIdpj4kLThXilalPnmDSOD65DcHt+g=="
   "resolved" "https://registry.npmmirror.com/postcss/-/postcss-8.4.20.tgz"
@@ -4408,7 +4416,7 @@
   "resolved" "https://registry.npmmirror.com/type-fest/-/type-fest-0.8.1.tgz"
   "version" "0.8.1"
 
-"typescript@*", "typescript@^4.4.3", "typescript@^4.4.4", "typescript@^4.5.4", "typescript@>=2.1.0 || >=2.1.0-dev || >=2.2.0-dev || >=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev || >= 3.0.0-dev || >= 3.1.0-dev", "typescript@>=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev || >=3.0.0-dev || >= 3.1.0-dev || >= 3.2.0-dev || >= 4.0.0-dev", "typescript@>=2.7", "typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta", "typescript@>=3":
+"typescript@*", "typescript@^4.4.3", "typescript@^4.4.4", "typescript@^4.5.4", "typescript@>=2.1.0 || >=2.1.0-dev || >=2.2.0-dev || >=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev || >= 3.0.0-dev || >= 3.1.0-dev", "typescript@>=2.3.0-dev || >=2.4.0-dev || >=2.5.0-dev || >=2.6.0-dev || >=2.7.0-dev || >=2.8.0-dev || >=2.9.0-dev || >=3.0.0-dev || >= 3.1.0-dev || >= 3.2.0-dev || >= 4.0.0-dev", "typescript@>=2.7", "typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta", "typescript@>=3", "typescript@>=4.4.4":
   "integrity" "sha512-HM/hFigTBHZhLXshn9sN37H085+hQGeJHJ/X7LpBWLID/fbc2acUMfU+lGD98X81sKP+pFa9f0DZmCwB9GnbAg=="
   "resolved" "https://registry.npmmirror.com/typescript/-/typescript-4.6.2.tgz"
   "version" "4.6.2"
@@ -4729,7 +4737,7 @@
     "@volar/shared" "0.29.8"
     "vscode-vue-languageservice" "0.29.8"
 
-"vue@^3.0.0-0 || ^2.6.0", "vue@^3.2.0", "vue@^3.2.25", "vue@3.2.31":
+"vue@^2.6.14 || ^3.2.0", "vue@^3.0.0-0 || ^2.6.0", "vue@^3.2.0", "vue@^3.2.25", "vue@3.2.31":
   "integrity" "sha512-odT3W2tcffTiQCy57nOT93INw1auq5lYLLYtWpPYQQYQOOdHiqFct9Xhna6GJ+pJQaF67yZABraH47oywkJgFw=="
   "resolved" "https://registry.npmmirror.com/vue/-/vue-3.2.31.tgz"
   "version" "3.2.31"
