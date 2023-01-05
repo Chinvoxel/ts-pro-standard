@@ -1,7 +1,7 @@
 // https://www.51cto.com/article/707156.html
 
 import axios from 'axios'
-import './axios.d'
+import './types.d'
 import type { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios'
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
