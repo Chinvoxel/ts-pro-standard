@@ -2,7 +2,8 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    node: true
+    node: true,
+    'vue/setup-compiler-macros': true // 解决defineProps、defineEmits 报错未定义的问题
   },
   extends: ['plugin:vue/essential', 'airbnb-base', 'plugin:prettier/recommended'],
   parser: 'vue-eslint-parser',

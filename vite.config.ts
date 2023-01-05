@@ -70,7 +70,7 @@ export default ({ mode }) =>
 
     // 本地服务
     server: {
-      port: 3001, // 端口号
+      port: 8080, // 端口号
       hmr: true, // 热更新
       // 代理
       proxy: {

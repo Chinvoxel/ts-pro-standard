@@ -9,8 +9,9 @@ const routes: Array<RouteRecordRaw> = [
     component: home
   },
   {
-    path: '/login',
+    path: '/login/:redirect?',
     name: 'login',
+    props: true,
     component: login
   },
   {

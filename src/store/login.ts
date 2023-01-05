@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia'
 import md5 from 'js-md5'
 import { ElMessage } from 'element-plus'
-import { getToken, setToken } from '@/utils/token'
+import { getToken, setToken, removeToken } from '@/utils/token'
 import { loginByEmail } from '@/api/login'
 
 interface loginForm {
@@ -30,6 +30,14 @@ export const useLoginStore = defineStore('login', {
             ElMessage.error(`${err}`)
             reject(err)
           })
+      })
+    },
+
+    FedLogOut() {
+      return new Promise<void>(resolve => {
+        this.token = ''
+        removeToken()
+        resolve()
       })
     }
   }

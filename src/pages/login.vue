@@ -63,14 +63,23 @@
 </template>
 
 <script setup lang="ts">
-import { ref, reactive } from 'vue'
-import { ElMessage, FormInstance, FormRules } from 'element-plus'
+import { ref, reactive, computed } from 'vue'
+import { FormInstance, FormRules } from 'element-plus'
 import { useRouter } from 'vue-router'
 import { isEmail } from '@/utils/verify'
 import { useLoginStore } from '@/store/login'
 
-const router = useRouter()
+const props = defineProps({
+  redirect: {
+    type: String,
+    default: ''
+  }
+})
+
+const $router = useRouter()
 const Login = useLoginStore()
+
+const toRoutePath = computed(() => props.redirect || '/')
 
 const ruleFormRef = ref<FormInstance>()
 const form = reactive({
@@ -100,8 +109,7 @@ const submitForm = (formEl: FormInstance | undefined) => {
   formEl.validate(valid => {
     if (valid) {
       Login.LoginByEmail(form).then(() => {
-        ElMessage.success('登陆成功！')
-        router.push({ path: '/' })
+        $router.push({ path: toRoutePath.value })
       })
       return true
     }

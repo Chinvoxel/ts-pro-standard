@@ -1,6 +1,11 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
+import { ElMessage } from 'element-plus'
+import NProgress from 'nprogress'
+import 'nprogress/nprogress.css'
 import { getToken } from '@/utils/token'
 import routes from './page'
+
+const whiteList = ['/NotFound', '/login']
 
 const router = createRouter({
   routes,
@@ -9,11 +14,30 @@ const router = createRouter({
 })
 
 router.beforeEach(to => {
-  const isAuthenticated = !!getToken()
-  if (to.name === 'login') {
-    return isAuthenticated ? { path: '/' } : true
+  NProgress.start()
+  const hasToken = !!getToken()
+
+  if (hasToken) {
+    if (to.name === 'login') {
+      return { path: '/' }
+    }
+    return true
   }
-  return isAuthenticated ? true : { path: '/login' }
+
+  if (to.name !== 'login') {
+    if (whiteList.includes(to.path)) {
+      return true
+    }
+
+    ElMessage.warning('当前登陆已过期，请重新登录!')
+    return { name: 'login', params: { redirect: to.path } }
+  }
+
+  return true
+})
+
+router.afterEach(() => {
+  NProgress.done()
 })
 
 // 路由错误捕获
