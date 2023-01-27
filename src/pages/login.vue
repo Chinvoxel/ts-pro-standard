@@ -35,9 +35,9 @@
 
         <el-link class="mt-2 mb-4" type="primary" :underline="false">Forgot password?</el-link>
 
-        <el-button class="btn-submit" type="primary" @click="submitForm(ruleFormRef)"
-          >Login</el-button
-        >
+        <el-button class="btn-submit" type="primary" @click="submitForm(ruleFormRef)">
+          Login
+        </el-button>
 
         <el-divider class="divider mt-6 mb-6" content-position="center">or</el-divider>
 
@@ -65,7 +65,7 @@
 <script setup lang="ts">
 import { ref, reactive, computed } from 'vue'
 import { FormInstance, FormRules } from 'element-plus'
-import { useRouter } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import { isEmail } from '@/utils/verify'
 import { useLoginStore } from '@/store/login'
 
@@ -76,9 +76,11 @@ const props = defineProps({
   }
 })
 
+const $route = useRoute()
 const $router = useRouter()
 const Login = useLoginStore()
 
+console.log('$route: ', $route)
 const toRoutePath = computed(() => props.redirect || '/')
 
 const ruleFormRef = ref<FormInstance>()

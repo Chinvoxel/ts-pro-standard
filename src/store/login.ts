@@ -33,8 +33,8 @@ export const useLoginStore = defineStore('login', {
       })
     },
 
-    FedLogOut() {
-      return new Promise<void>(resolve => {
+    FedLogOut(): Promise<void> {
+      return new Promise(resolve => {
         this.token = ''
         removeToken()
         resolve()

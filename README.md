@@ -12,4 +12,11 @@
 真正需要更新的只有自己的业务代码，第三方(node_modules)包一般不会更新变动
 若不分包 每一次代码修改，请求的js文件体积都很大，响应时间更长
 
+## 配置文件
+
+### tsconfig.node.json 和 tsconfig.json
+> tsconfig.node.json 是专门用于 vite.config.ts 的 TypeScript 配置文件。
+> tsconfig.json 文件通过 references 字段引入 tsconfig.node.json 中的配置。
+> 使用 references 字段引入的配置文件需要设置 composite: true 字段，并用 include 或 files 等等属性指明配置覆盖的文件范围。
+
 
