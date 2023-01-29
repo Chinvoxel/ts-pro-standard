@@ -589,15 +589,15 @@
   "resolved" "https://registry.npmmirror.com/@tsconfig/node16/-/node16-1.0.2.tgz"
   "version" "1.0.2"
 
+"@types/crypto-js@^4.1.1":
+  "integrity" "sha512-BG7fQKZ689HIoc5h+6D2Dgq1fABRa0RbBWKBd9SP/MVRVXROflpm5fhwyATX5duFmbStzyzyycPB8qUYKDH3NA=="
+  "resolved" "https://registry.npmmirror.com/@types/crypto-js/-/crypto-js-4.1.1.tgz"
+  "version" "4.1.1"
+
 "@types/estree@*", "@types/estree@^1.0.0":
   "integrity" "sha512-WulqXMDUTYAXCjZnk6JtIHPigp55cVtDgDrO2gHRwhyJto21+1zbVCtOYB2L1F9w4qCQ0rOGWBnBe0FNTiEJIQ=="
   "resolved" "https://registry.npmmirror.com/@types/estree/-/estree-1.0.0.tgz"
   "version" "1.0.0"
-
-"@types/js-md5@^0.7.0":
-  "integrity" "sha512-4mN02EhCni6MlvCUl9bpcbMfu7R3G+ac+J37b7gKCu3tWhZc5/Ya41T+2QNR2aFt6vnMe+uTa5rFQ+nT2kl6cA=="
-  "resolved" "https://registry.npmmirror.com/@types/js-md5/-/js-md5-0.7.0.tgz"
-  "version" "0.7.0"
 
 "@types/json-schema@^7.0.9":
   "integrity" "sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ=="
@@ -1600,6 +1600,11 @@
     "path-key" "^3.1.0"
     "shebang-command" "^2.0.0"
     "which" "^2.0.1"
+
+"crypto-js@^4.1.1":
+  "integrity" "sha512-o2JlM7ydqd3Qk9CA0L4NL6mTzU2sdx96a+oOfPu8Mkl/PK51vSyoi8/rQ8NknZtk44vq15lmhAj9CIAGwgeWKw=="
+  "resolved" "https://registry.npmmirror.com/crypto-js/-/crypto-js-4.1.1.tgz"
+  "version" "4.1.1"
 
 "css-select@^4.2.1":
   "integrity" "sha512-wPpOYtnsVontu2mODhA19JrqWxNsfdatRKd64kmpRbQgh1KtItko5sTnEpPdpSaJszTOhEMlF/RPz28qj4HqhQ=="
@@ -3057,11 +3062,6 @@
   "integrity" "sha512-PAr6Xg2jvd7MCR6Ld9Jg3BmTcjYsHEBx1VlwEwULb/qowPf5VD9kEMagj23Gm7JRnSvE/Da/57nChZjnvL8v6A=="
   "resolved" "https://registry.npmmirror.com/js-base64/-/js-base64-3.7.3.tgz"
   "version" "3.7.3"
-
-"js-md5@^0.7.3":
-  "integrity" "sha512-ZC41vPSTLKGwIRjqDh8DfXoCrdQIyBgspJVPXHBGu4nZlAEvG3nf+jO9avM9RmLiGakg7vz974ms99nEV0tmTQ=="
-  "resolved" "https://registry.npmmirror.com/js-md5/-/js-md5-0.7.3.tgz"
-  "version" "0.7.3"
 
 "js-stringify@^1.0.2":
   "integrity" "sha512-rtS5ATOo2Q5k1G+DADISilDA6lv79zIiwFd6CcjuIxGKLFm5C+RLImRscVap9k55i+MOZwgliw+NejvkLuGD5g=="

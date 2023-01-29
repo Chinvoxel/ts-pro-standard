@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import md5 from 'js-md5'
+import CryptoJS from 'crypto-js'
 import { ElMessage } from 'element-plus'
 import { getToken, setToken, removeToken } from '@/utils/token'
 import { loginByEmail } from '@/api/login'
@@ -16,7 +16,7 @@ export const useLoginStore = defineStore('login', {
   actions: {
     LoginByEmail({ email, password }: loginForm): Promise<void> {
       return new Promise((resolve, reject) => {
-        loginByEmail({ email, password: md5(password) })
+        loginByEmail({ email, password: CryptoJS.MD5(password).toString() })
           .then(res => {
             const { code, msg, data } = res
             if (code !== 200) throw msg

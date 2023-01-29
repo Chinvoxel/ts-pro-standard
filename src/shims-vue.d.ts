@@ -1,1 +1,1 @@
-declare module '@types/js-md5'
+declare module '@types/crypto-js'
