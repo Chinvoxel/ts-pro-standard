@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"] // 别名配置
     },
     "target": "esnext",
     "useDefineForClassFields": true,

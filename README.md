@@ -19,4 +19,10 @@
 > tsconfig.json 文件通过 references 字段引入 tsconfig.node.json 中的配置。
 > 使用 references 字段引入的配置文件需要设置 composite: true 字段，并用 include 或 files 等等属性指明配置覆盖的文件范围。
 
+### vite 中使用 process
+// 安装 @types/node
+npm i --save-dev @types/node
 
+## vue-tsc --noEmit --skipLibCheck
+--noEmit：不生成输出文件。
+--skipLibCheck ：忽略所有的声明文件（ *.d.ts）的类型检查。跳过对node_modules内的检测。
