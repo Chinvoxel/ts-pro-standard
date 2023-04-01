@@ -21,6 +21,7 @@
     "@vitejs/plugin-vue": "^4.0.0",
     "axios": "^1.2.1",
     "crypto-js": "^4.1.1",
+    "echarts": "^5.4.2",
     "element-plus": "^2.2.27",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-import-resolver-typescript": "^3.5.2",

@@ -1,6 +1,5 @@
 import { defineStore } from 'pinia'
 import CryptoJS from 'crypto-js'
-import { ElMessage } from 'element-plus'
 import { getToken, setToken, removeToken } from '@/utils/token'
 import { loginByEmail } from '@/api/login'
 
@@ -27,7 +26,6 @@ export const useLoginStore = defineStore('login', {
             resolve()
           })
           .catch(err => {
-            ElMessage.error(`${err}`)
             reject(err)
           })
       })
