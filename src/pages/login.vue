@@ -129,6 +129,7 @@ const submitForm = (formEl: FormInstance | undefined) => {
   height: 100vh;
   overflow-y: auto;
   background: #03a9f4;
+
   .login-box {
     min-width: 1000px;
     height: 600px;
@@ -138,10 +139,12 @@ const submitForm = (formEl: FormInstance | undefined) => {
     background-image: url('@/assets/images/login.png');
     background-size: contain;
     background-repeat: no-repeat;
+
     .form {
       width: 350px;
       height: 100%;
       padding-top: 60px;
+
       .form-input {
         border-radius: 6px;
         background: #f5f5f5;
@@ -159,15 +162,18 @@ const submitForm = (formEl: FormInstance | undefined) => {
               border-radius: 2px;
               background: #ffffff;
             }
+
             & > :first-child {
               margin-left: 8px;
             }
           }
+
           .el-input__inner {
             padding-left: 0;
             background: inherit;
             box-shadow: none;
             border: none;
+
             &::placeholder {
               font-size: 14px;
             }
@@ -178,6 +184,7 @@ const submitForm = (formEl: FormInstance | undefined) => {
       .el-link {
         @include flex(flex-end);
       }
+
       .divider {
         :deep(.el-divider__text) {
           color: rgba(107, 114, 128, 0.8);
@@ -191,6 +198,7 @@ const submitForm = (formEl: FormInstance | undefined) => {
 
       .btn-login-way {
         width: 45%;
+
         .logo {
           width: 25px;
           margin-right: 5px;

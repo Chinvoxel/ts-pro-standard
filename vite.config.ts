@@ -1,6 +1,6 @@
 import path from 'path'
 import { defineConfig, loadEnv } from 'vite'
-import vue from '@vitejs/plugin-vue'
+import vue from '@vitejs/plugin-vue' // 智能补全导入api
 import WindiCSS from 'vite-plugin-windicss'
 import viteCompression from 'vite-plugin-compression' // 压缩插件
 import visualizer from 'rollup-plugin-visualizer' // 打包体积分析插件

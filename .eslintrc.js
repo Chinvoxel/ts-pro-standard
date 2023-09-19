@@ -28,7 +28,7 @@ module.exports = {
 
     /* VUE */
     'vue/no-multiple-template-root': 'off', // 关闭多根节点检测
-    'vue/comment-directive': 'off',
+    'vue/comment-directive': 'off', // 支持在模版中使用 eslint-disable-next-line 等注释
     'vue/multi-word-component-names': 'off', // 关闭单文件组件名必须多个单词的限制
 
     /* JS */
